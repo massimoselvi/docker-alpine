@@ -1,0 +1,7 @@
+pipeline:
+    backend:
+        image: alpine:3.7
+        commands:
+            - apk add --update docker make
+            - ./configure
+            - make build
