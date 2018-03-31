@@ -1,11 +1,6 @@
 pipeline:
     build:
-        image: alpine:3.7
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
+        image: alpine:
         commands:
-            - apk add --update docker make
-            - ./configure
-            - make build
-
-    branches: feature/build-drone
+            - env
+            - ls
